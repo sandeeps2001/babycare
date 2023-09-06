@@ -1,11 +1,10 @@
 import nodemailer from 'nodemailer';
-
 // Create a transporter object using your Gmail account
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     user: 'sandy4adhi@gmail.com', // Your Gmail email address
-    pass: process.env.MAIL_PASS,   // Your Gmail password (use an app-specific password if enabled)
+    pass: process.env.MAILPASS,   // Your Gmail password (use an app-specific password if enabled)
   },
 });
 
