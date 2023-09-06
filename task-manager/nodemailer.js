@@ -5,7 +5,7 @@ const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
     user: 'sandy4adhi@gmail.com', // Your Gmail email address
-    pass: 'bhpdqyyuozvqlqje',   // Your Gmail password (use an app-specific password if enabled)
+    pass: process.env.MAIL_PASS,   // Your Gmail password (use an app-specific password if enabled)
   },
 });
 
@@ -16,8 +16,8 @@ const transporter = nodemailer.createTransport({
 const send = (data)=>{
     const {email,phone,name} = data
     const mailOptions = {
-        from: 'sandy4adhi@gmail.com',
-        to: 'divya.baskr@gmail.com',
+        from: process.env.FROM,
+        to: process.env.TO,
         subject: 'baby care form got filled!',
         text:   `name: ${name} ;
         email: ${email} ;

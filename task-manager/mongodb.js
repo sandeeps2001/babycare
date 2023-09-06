@@ -1,6 +1,5 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
-const uri = 'mongodb+srv://sandy4adhi:prabfamily@cluster0.gvikmtt.mongodb.net/?retryWrites=true&w=majority'
-
+const uri = process.env.DBUSER
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
