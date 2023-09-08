@@ -66,7 +66,10 @@ const submit = async () =>{
 </template>
 
 <style scoped>
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .formsubmit{
        background-color: blue;
        cursor: pointer;
@@ -103,11 +106,7 @@ const submit = async () =>{
      padding: 10px;
    }
 
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins',sans-serif;
-}
+
 .l{
   display: flex;
   align-items: center;
