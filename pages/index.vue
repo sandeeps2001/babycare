@@ -1,4 +1,5 @@
-<script setup>
+<script >
+
 console.log('Mail' , process.env.MAILPASS)
 const email = ref('');
 const name = ref('');
